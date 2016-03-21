@@ -18,12 +18,13 @@
         android:text="Movies"
         android:id="@+id/b1"
         android:onClick="quizee"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="205dp"
+        android:layout_marginTop="39dp"
         style="@style/Widget.Design.AppBarLayout"
         android:textSize="24dp"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="fill_parent"
@@ -48,5 +49,18 @@
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/b1"
         android:layout_alignEnd="@+id/b1" />
+
+    <Button
+        style="@style/Widget.Design.AppBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Science"
+        android:id="@+id/b3"
+        android:onClick="quizee"
+        android:layout_marginTop="47dp"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:layout_below="@+id/b2"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

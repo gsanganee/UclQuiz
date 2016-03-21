@@ -37,6 +37,11 @@ public class MainActivity extends Activity {
             Intent intent = new Intent(this, Main2Activity.class);
             startActivity(intent);
         }
+        else if (button_text.equals("Science"))
+        {
+            Intent intent = new Intent(this, Main3Activity.class);
+            startActivity(intent);
+        }
 
 
             }
