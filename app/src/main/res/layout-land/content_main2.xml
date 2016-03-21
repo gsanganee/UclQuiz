@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:weightSum="1"
     android:touchscreenBlocksFocus="true">
+    
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +16,7 @@
         android:textSize="24dp"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:textColor="#dd0d0d" />
+        android:textColor="#e21313" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -55,7 +56,7 @@
         android:layout_gravity="center_horizontal"
         android:background="#ed0e0e"
         android:textColor="#ffffff"
-        android:layout_below="@+id/rg2"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
     <ImageView
         android:layout_width="wrap_content"
@@ -63,6 +64,6 @@
         android:id="@+id/imageView"
         android:src = "@drawable/quiz"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/rg2"
-        android:layout_toStartOf="@+id/rg2" />
+        android:layout_toLeftOf="@+id/movebut"
+        android:layout_toStartOf="@+id/movebut" />
 </RelativeLayout>

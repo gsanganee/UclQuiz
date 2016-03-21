@@ -14,19 +14,20 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-    TextView textView;
-    Button bt;
 
     @Override
+    //setting up the on create method for the main activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void quest(View view)
+    //using "quizee" as the "on click" method for both the "Movies" button and the "food" Button
+    public void quizee(View view)
     {
-
+    //Setting up "button_text" to get the text from the buttons and change it into a string
         String button_text;
         button_text = ((Button) view).getText().toString();
+    //If else statement to move to new activities (the two separate quiz')(quiz is Movies and Main2Activity is Food)
         if(button_text.equals("Movies")) {
             Intent intent = new Intent(this, quiz.class);
             startActivity(intent);

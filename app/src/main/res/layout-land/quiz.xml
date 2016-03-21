@@ -14,14 +14,14 @@
         android:textSize="24dp"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:textColor="#f20e0e" />
+        android:textColor="#e60a0a" />
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.59"
         android:id="@+id/rg"
-        android:layout_below="@+id/question"
+        android:layout_above="@+id/movebt"
         android:layout_centerHorizontal="true">
 
         <RadioButton
@@ -54,7 +54,7 @@
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffff"
         android:background="#e70a0a"
-        android:layout_below="@+id/rg"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
     <ImageView
         android:layout_width="wrap_content"
@@ -62,8 +62,6 @@
         android:id="@+id/imageView"
         android:src = "@drawable/quiz"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/rg"
-        android:layout_toStartOf="@+id/rg"
-        android:layout_marginRight="41dp"
-        android:layout_marginEnd="41dp" />
+        android:layout_alignRight="@+id/rg"
+        android:layout_alignEnd="@+id/rg" />
 </RelativeLayout>
